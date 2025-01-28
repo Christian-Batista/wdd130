@@ -56,10 +56,10 @@ a {
     padding: 20px;
     position: absolute;
     top: 45%;
-    left: 50%; /* Coloca el artículo en el centro horizontal */
-    transform: translateX(-50%); /* Ajusta para centrar el artículo completamente */
+    left: 50%; 
+    transform: translateX(-50%); 
     height: auto;
-    width: 90%; /* Ajusta el ancho según lo necesites */
+    width: 90%;
     background-color: var(--secondary-color);
     box-sizing: border-box;
 }
@@ -92,6 +92,6 @@ a {
  }
  
  footer .social-links a img {
-    width: 30px; /* Ajusta el tamaño según lo necesites */
-    height: auto; /* Mantiene la proporción original de la imagen */
+    width: 30px;
+    height: auto;
 }
