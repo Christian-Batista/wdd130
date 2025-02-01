@@ -7,6 +7,10 @@
     --heading-font: 'Bebas Neue', sans-serif;
     --text-font: 'Open Sans', sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
 body {
     margin: 0 50px 50px 50px;
 }
