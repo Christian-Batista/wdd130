@@ -1,0 +1,101 @@
+/* rafting.css */
+:root {
+    --primary-color: #264653;
+    --secondary-color: #2A9D8F;
+    --accent1-color: #E9C46A;
+    --accent2-color: #F4A261;
+    --heading-font: 'Bebas Neue', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+body {
+    margin: 0 50px 50px 50px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: large;
+}
+/* hero container */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+
+.hero h1 {
+    position: absolute;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%);
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 5px var(--primary-color);
+    background-color: var(--secondary-color);
+    
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.hero article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    height: auto;
+    width: 90%;
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+}
+.hero article h2 {
+    display: none;
+}
+.hero article p {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px var(--secondary-color);
+    margin: 0 10px;
+}
+.hero article img {
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 0 30px gray;
+    opacity: 1;
+}
+
+ .adventure {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+ }
+
+ footer p {
+    font-size: medium;
+ }
+ 
+ footer .social-links a img {
+    width: 30px;
+    height: auto;
+}
