@@ -15,9 +15,33 @@ body {
     margin: 0 50px 50px 50px;
 }
 
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    max-width: 85%;
+}
+
+header img {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 h1, h2 {
     color: var(--primary-color);
-    
 }
 
 a {
@@ -49,7 +73,7 @@ a {
 .hero img {
     display: block;
     width: 100%;
-    height: 60%;
+    max-height: 750px;
     object-fit: cover;
 }
 .hero article {
@@ -84,18 +108,103 @@ a {
     opacity: 1;
 }
 
- .adventure {
+.history {
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 20px;
- }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
- footer p {
+.history h2 {
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.content p {
+    flex: 1;
+    min-width: 350px;
+    max-width: 40%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content img {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure {
+    text-align: center;
+    padding: 40px 0;
+    min-height: 40vh;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-gallery figcaption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D4BFFF;
+    padding: 15px 20px;
+}
+
+footer p {
     font-size: medium;
- }
- 
- footer .social-links a img {
+    margin: 0;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-links a img {
     width: 30px;
     height: auto;
 }
